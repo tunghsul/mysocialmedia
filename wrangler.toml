@@ -1,0 +1,17 @@
+name = "mysocialmedia"
+type = "javascript"
+zone_id = ""
+account_id = ""
+route = ""
+workers_dev = true
+compatibility_date = "2021-11-15"
+
+kv_namespaces = [ 
+	{ binding = "MY_KV", id = "9244fed1cb4a4a7d909dafa6e476c8d3" },
+	{ binding = "COMMENT_KV", id = "609750db5d5942f38a9b51fae354ec01" }
+]
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
